@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TiniLa Nails & Hand Spa</title>
+<style>
+:root{
+  --black:#0b0907;
+  --black2:#14100c;
+  --dark:#1c1712;
+  --cream:#efe2d2;
+  --cream2:#d8c0a1;
+  --gold:#c99d61;
+  --gold2:#e2bd83;
+  --muted:#9f8b76;
+  --line:rgba(231,196,143,.24);
+  --white:#fff8ef;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--black);color:var(--white);font-family:Inter,Arial,sans-serif;overflow-x:hidden} a{text-decoration:none;color:inherit} img{display:block;max-width:100%;object-fit:cover}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 10% 5%,rgba(219,174,102,.13),transparent 28%),radial-gradient(circle at 85% 25%,rgba(255,231,194,.08),transparent 25%),linear-gradient(135deg,rgba(255,255,255,.025),transparent 30%);z-index:-2} body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:72px 72px;z-index:-1}.wrap{max-width:1180px;margin:auto;padding:0 36px}.topbar{height:38px;background:#080705;border-bottom:1px solid rgba(255,255,255,.06);color:#cbb395;font-size:12px;letter-spacing:.03em}.topbar .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}.topbar span{opacity:.9}.nav{position:sticky;top:0;z-index:20;background:rgba(10,8,6,.78);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.07)}.nav .wrap{height:86px;display:flex;align-items:center;justify-content:space-between;gap:26px}.brand{min-width:190px}.logo{font-family:Georgia,Times,serif;font-size:34px;letter-spacing:.18em;color:var(--gold2);line-height:.9}.logo small{display:block;font-family:Inter,Arial,sans-serif;font-size:10px;letter-spacing:.34em;color:#d5b382;margin-top:7px}.menu{display:flex;gap:34px;align-items:center;font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:700}.menu a{color:#d7c6b4;position:relative;padding:12px 0}.menu a:after{content:"";position:absolute;left:0;bottom:4px;width:0;height:1px;background:var(--gold);transition:.25s}.menu a:hover:after,.menu a.active:after{width:100%}.reserve{background:linear-gradient(135deg,#f2cf99,#bb8342);color:#21130a;border:none;border-radius:4px;padding:15px 28px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;box-shadow:0 18px 44px rgba(191,129,59,.25)}
+.hero{position:relative;min-height:720px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#0b0907 0%,#0b0907 45%,rgba(11,9,7,.86) 61%,rgba(11,9,7,.12) 100%)}.hero:before{content:"";position:absolute;right:0;top:0;width:66%;height:100%;background:linear-gradient(90deg,#0b0907 0%,rgba(11,9,7,.82) 11%,rgba(11,9,7,.25) 37%,rgba(11,9,7,.18) 100%),url('assets/hero-hand-clean.jpg') center right/cover no-repeat;filter:saturate(.95) contrast(1.05)}.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:190px;background:linear-gradient(transparent,#0b0907)}.hero-content{position:relative;z-index:2;padding:95px 0 78px;width:55%}.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.34em;font-weight:800;font-size:12px;margin-bottom:26px}.hero h1,.section-title{font-family:Georgia,Times,serif;font-weight:400;text-transform:uppercase;letter-spacing:.12em}.hero h1{font-size:82px;line-height:.96;margin:0 0 26px;color:#f3e6d6;text-shadow:0 18px 55px rgba(0,0,0,.75)}.hero p{max-width:510px;color:#d8c8b6;font-size:18px;line-height:1.75;margin:0 0 34px}.cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;border-radius:4px;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:900}.btn-primary{background:linear-gradient(135deg,#f1cf9b,#bd8444);color:#21130a}.btn-ghost{border:1px solid rgba(231,196,143,.44);color:#e8d7c1;background:rgba(255,255,255,.03)}.hero-badges{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;width:min(720px,100%);margin-top:64px}.badge{border-left:1px solid var(--line);padding:4px 0 4px 20px}.badge b{display:block;color:#fff4e7;font-size:13px}.badge span{display:block;color:#a99682;font-size:12px;margin-top:6px}.circle-mark{position:absolute;right:110px;bottom:95px;width:142px;height:142px;border:1px solid rgba(226,189,131,.55);border-radius:50%;display:grid;place-items:center;color:#e7c895;text-align:center;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:800;z-index:3}.circle-mark:before,.circle-mark:after{content:"✦";position:absolute;color:#d6ae70}.circle-mark:before{top:18px}.circle-mark:after{bottom:18px}
+.light{background:#e8dccf;color:#1d1712}.section{padding:92px 0}.section-head{text-align:center;margin-bottom:44px}.section-kicker{font-size:12px;color:#9e7a50;text-transform:uppercase;letter-spacing:.32em;font-weight:800;margin-bottom:16px}.section-title{font-size:38px;line-height:1.15;margin:0;color:#201811}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.service-card{background:#f5ece3;border:1px solid rgba(81,54,31,.08);border-radius:8px;overflow:hidden;box-shadow:0 22px 50px rgba(33,21,13,.09);transition:.25s}.service-card:hover{transform:translateY(-8px);box-shadow:0 28px 70px rgba(33,21,13,.16)}.service-card img{height:154px;width:100%}.service-body{padding:22px}.service-body h3{font-family:Georgia,Times,serif;font-size:21px;margin:0 0 12px;color:#1f1711}.service-body p{font-size:14px;line-height:1.65;color:#67594e;margin:0 0 20px}.learn{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.15em;color:#1f1711}.center{text-align:center;margin-top:34px}.outline-dark{border:1px solid #4d3a2a;color:#24180f;background:transparent;min-width:260px}.price{position:relative;background:#0d0b09;overflow:hidden}.price:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,8,6,.98),rgba(10,8,6,.88) 48%,rgba(10,8,6,.55) 72%,rgba(10,8,6,.8)),url('assets/price-bg.jpg') right center/40% 100% no-repeat;filter:contrast(1.04)}.price .wrap{position:relative;z-index:2}.price .section-title{color:#f4e6d7;text-align:left}.price .section-kicker{text-align:left;color:#d7ad71}.price-table{display:grid;grid-template-columns:repeat(3,1fr);gap:38px;max-width:850px}.price-col h3{font-size:14px;text-transform:uppercase;letter-spacing:.18em;color:#f0cf98;margin:0 0 18px}.price-item{display:flex;align-items:flex-end;gap:12px;color:#e8d8c7;font-size:15px;margin:0 0 14px}.price-item:after{content:"";height:1px;flex:1;border-bottom:1px dotted rgba(232,216,199,.28);transform:translateY(-5px);order:2}.price-item span:first-child{order:1}.price-item strong{order:3;color:#f3d4a4}.gallery{background:#efe6dc;color:#201811}.gallery-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.gallery-row img{height:165px;width:100%;border-radius:8px;box-shadow:0 20px 42px rgba(31,23,17,.12)}.experience{background:#e8dccf;color:#201811;position:relative;overflow:hidden}.experience:before{content:"";position:absolute;left:-80px;bottom:-160px;width:470px;height:470px;background:radial-gradient(circle,rgba(181,134,78,.23),transparent 62%);border-radius:50%}.exp-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center;position:relative}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(91,64,41,.2);border-bottom:1px solid rgba(91,64,41,.2)}.step{padding:28px 25px;border-right:1px solid rgba(91,64,41,.2)}.step:last-child{border-right:none}.step-num{font-family:Georgia,Times,serif;color:#c59a61;font-size:26px;margin-bottom:18px}.step b{display:block;margin-bottom:12px}.step p{font-size:13px;color:#6b5c50;line-height:1.6}.booking-card{border:1px solid rgba(54,36,20,.28);border-radius:8px;padding:44px;text-align:center;background:rgba(255,255,255,.28);box-shadow:0 25px 70px rgba(49,35,21,.11)}.booking-card h3{font-family:Georgia,Times,serif;font-size:34px;font-weight:400;text-transform:uppercase;letter-spacing:.09em;margin:0 0 16px}.testimonials{background:#33291f;color:#f6eadb}.testimonials .section-title{color:#f6eadb}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.review{border-left:1px solid rgba(231,196,143,.28);padding:8px 30px}.stars{color:#e0b16e;letter-spacing:.2em;margin-bottom:18px}.review p{line-height:1.75;color:#d3c3b2}.review small{color:#e6c18c}.footer{background:#0a0806;color:#d7c7b6;padding:60px 0 26px}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.1fr;gap:36px;padding-bottom:42px;border-bottom:1px solid rgba(255,255,255,.08)}.footer h4{color:#d5ac70;text-transform:uppercase;letter-spacing:.18em;font-size:12px;margin:0 0 22px}.footer p,.footer li{color:#aa9884;font-size:14px;line-height:1.8}.footer ul{padding:0;margin:0;list-style:none}.footer .reserve{display:inline-flex;margin-top:5px}.copyright{display:flex;justify-content:space-between;gap:20px;color:#7d6d5f;font-size:12px;padding-top:25px}.mobile-only{display:none}
+@media(max-width:900px){.topbar{display:none}.menu{display:none}.nav .wrap{height:72px}.logo{font-size:28px}.hero{min-height:auto}.hero:before{width:100%;opacity:.55}.hero-content{width:100%;padding:86px 0 60px}.hero h1{font-size:52px}.hero p{font-size:16px}.hero-badges,.circle-mark{display:none}.services-grid,.price-table,.gallery-row,.reviews,.footer-grid{grid-template-columns:1fr}.gallery-row img{height:230px}.exp-layout{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.step{border-right:none;border-bottom:1px solid rgba(91,64,41,.2)}.step:last-child{border-bottom:none}.wrap{padding:0 22px}.section{padding:70px 0}.copyright{flex-direction:column}.reserve{padding:14px 18px}.mobile-only{display:inline-flex}}
+@media(max-width:520px){.hero h1{font-size:42px;letter-spacing:.07em}.section-title{font-size:30px}.cta-row .btn{width:100%}.nav .reserve{display:none}.hero-content{padding-top:60px}.service-card img{height:190px}.booking-card{padding:28px}}
+</style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>📍 Sedíme v Polome</span><span>☎ +421 908 123 456</span><span>✦ Otvorené: Po – Pia 8:00 – 18:00 | So 8:00 – 13:00</span></div></div>
+  <header class="nav"><div class="wrap">
+    <a class="brand" href="#"><div class="logo">TiniLa<small>NAILS & HAND SPA</small></div></a>
+    <nav class="menu"><a class="active" href="#home">Domov</a><a href="#sluzby">Služby</a><a href="#cennik">Cenník</a><a href="#galeria">Galéria</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="reserve" href="#rezervacia">Rezervovať</a>
+  </div></header>
+  <main>
+    <section id="home" class="hero">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">Luxus. Starostlivosť. Detail.</div>
+          <h1>Tvoje ruky.<br>Naša vášeň.</h1>
+          <p>Profesionálna manikúra, gélové nechty a hand spa rituály v elegantnom prostredí s dôrazom na detail.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="#rezervacia">Rezervovať termín</a><a class="btn btn-ghost" href="#sluzby">Pozrieť služby</a></div>
+          <div class="hero-badges">
+            <div class="badge"><b>Precízna práca</b><span>Dôraz na detail</span></div>
+            <div class="badge"><b>Prémiové produkty</b><span>Kvalita bez kompromisov</span></div>
+            <div class="badge"><b>Hygiena & sterilita</b><span>Vaše zdravie na prvom mieste</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="circle-mark">Detail,<br>ktorý cítite</div>
+    </section>
+
+    <section id="sluzby" class="section light">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker">Služby</div><h2 class="section-title">Doprajte si dokonalú starostlivosť</h2></div>
+        <div class="services-grid">
+          <article class="service-card"><img src="assets/service-1.jpg" alt="Gélové nechty"><div class="service-body"><h3>Gélové nechty</h3><p>Elegantné, pevné a dokonale tvarované nechty podľa vášho štýlu.</p><a class="learn" href="#cennik">Zistiť viac →</a></div></article>
+          <article class="service-card"><img src="assets/service-2.jpg" alt="Manikúra"><div class="service-body"><h3>Manikúra</h3><p>Kombinovaná alebo suchá manikúra pre upravené ruky každý deň.</p><a class="learn" href="#cennik">Zistiť viac →</a></div></article>
+          <article class="service-card"><img src="assets/service-3.jpg" alt="Hand Spa Ritual"><div class="service-body"><h3>Hand Spa Ritual</h3><p>Relaxačný rituál pre pokožku rúk, hydratáciu a hebkosť.</p><a class="learn" href="#cennik">Zistiť viac →</a></div></article>
+          <article class="service-card"><img src="assets/service-4.jpg" alt="Nail Art"><div class="service-body"><h3>Nail Art</h3><p>Jemný detail, lesk alebo výrazný akcent, ktorý podčiarkne osobnosť.</p><a class="learn" href="#cennik">Zistiť viac →</a></div></article>
+        </div>
+        <div class="center"><a class="btn outline-dark" href="#cennik">Pozrieť všetky služby</a></div>
+      </div>
+    </section>
+
+    <section id="cennik" class="section price">
+      <div class="wrap">
+        <div class="section-kicker">Cenník</div><h2 class="section-title">Prehľadné ceny</h2>
+        <div class="price-table">
+          <div class="price-col"><h3>Gélové nechty</h3><div class="price-item"><span>Nový set</span><strong>45 €</strong></div><div class="price-item"><span>Doplnenie do 3 týždňov</span><strong>35 €</strong></div><div class="price-item"><span>Doplnenie nad 3 týždne</span><strong>40 €</strong></div><div class="price-item"><span>Odstránenie gélu</span><strong>15 €</strong></div></div>
+          <div class="price-col"><h3>Manikúra</h3><div class="price-item"><span>Kombinovaná manikúra</span><strong>20 €</strong></div><div class="price-item"><span>Suchá manikúra</span><strong>18 €</strong></div><div class="price-item"><span>P-shine / výživa</span><strong>22 €</strong></div><div class="price-item"><span>Lakovanie</span><strong>8 €</strong></div></div>
+          <div class="price-col"><h3>Hand Spa Ritual</h3><div class="price-item"><span>Basic 60 min</span><strong>35 €</strong></div><div class="price-item"><span>Deluxe 75 min</span><strong>45 €</strong></div><div class="price-item"><span>Luxury 90 min</span><strong>55 €</strong></div><div class="price-item"><span>Nail art / detail</span><strong>od 5 €</strong></div></div>
+        </div>
+        <div class="center" style="text-align:left"><a class="btn btn-ghost" href="#rezervacia">Pozrieť celý cenník</a></div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section gallery">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker">Galéria</div><h2 class="section-title">Naša práca hovorí za nás</h2></div>
+        <div class="gallery-row"><img src="assets/gallery-1.jpg" alt="Nechty"><img src="assets/gallery-2.jpg" alt="Nechty"><img src="assets/gallery-3.jpg" alt="Nechty"><img src="assets/gallery-4.jpg" alt="Nechty"><img src="assets/gallery-5.jpg" alt="Nechty"></div>
+        <div class="center"><a class="btn outline-dark" href="#kontakt">Zobraziť viac</a></div>
+      </div>
+    </section>
+
+    <section id="rezervacia" class="section experience">
+      <div class="wrap exp-layout">
+        <div><h2 class="section-title">Ako prebieha objednanie?</h2><div class="steps"><div class="step"><div class="step-num">01</div><b>Vyberte si termín</b><p>Napíšte nám alebo použite rezervačné tlačidlo.</p></div><div class="step"><div class="step-num">02</div><b>Príďte & relaxujte</b><p>Postaráme sa o vás v príjemnom prostredí.</p></div><div class="step"><div class="step-num">03</div><b>Užite si výsledok</b><p>Krásne nechty a hebké ruky, ktoré vydržia.</p></div><div class="step"><div class="step-num">04</div><b>Vernostné výhody</b><p>Zbierajte body a získajte odmeny.</p></div></div></div>
+        <div class="booking-card"><h3>Rezervujte si svoj termín</h3><p>Tešíme sa na vašu návštevu.</p><a class="btn btn-primary" href="#kontakt">Rezervovať online</a></div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="wrap"><div class="section-head"><h2 class="section-title">Čo o nás hovoria klientky</h2></div><div class="reviews"><div class="review"><div class="stars">★★★★★</div><p>Najkrajšie nechty, aké som kedy mala. Precízna práca a krásne prostredie.</p><small>— Lucia</small></div><div class="review"><div class="stars">★★★★★</div><p>Hand spa rituál bol perfektný, odchádzala som ako nová. Určite odporúčam.</p><small>— Martina</small></div><div class="review"><div class="stars">★★★★★</div><p>Profesionálny prístup, čistota a výsledok presne podľa predstáv.</p><small>— Veronika</small></div></div></div>
+    </section>
+  </main>
+  <footer id="kontakt" class="footer"><div class="wrap"><div class="footer-grid"><div><div class="logo">TiniLa<small>NAILS & HAND SPA</small></div><p>Luxusná starostlivosť o vaše ruky v Polome.</p></div><div><h4>Kontakt</h4><ul><li>📍 Poloma 123, 976 66 Poloma</li><li>☎ +421 908 123 456</li><li>✉ tinila.nails@gmail.com</li></ul></div><div><h4>Otváracie hodiny</h4><ul><li>Pondelok – Piatok: 8:00 – 18:00</li><li>Sobota: 8:00 – 13:00</li><li>Nedeľa: zatvorené</li></ul></div><div><h4>Rýchla rezervácia</h4><a class="reserve" href="#home">Rezervovať online</a><p>alebo nám napíšte na Instagram</p></div></div><div class="copyright"><span>© 2026 TiniLa Nails & Hand Spa. Všetky práva vyhradené.</span><span>Ochrana osobných údajov · Obchodné podmienky</span></div></div></footer>
+</body>
+</html>
